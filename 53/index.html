@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>环保闯关：城市清洁行动</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-wrap">
+    <section class="panel">
+      <h1>环保闯关：城市清洁行动</h1>
+      <p class="hint">像超级玛丽一样闯关：左右移动、跳跃躲障碍，收集垃圾后抵达关底回收站。</p>
+      <div class="stats">
+        <div><span>时间</span><strong id="time">90</strong>s</div>
+        <div><span>得分</span><strong id="score">0</strong></div>
+        <div><span>生命</span><strong id="combo">3</strong></div>
+        <div><span>关卡</span><strong id="target">1/3</strong></div>
+      </div>
+      <div class="legend">
+        <span>操作: A/D 或 ←/→ 移动</span>
+        <span>跳跃: W / ↑ / 空格</span>
+        <span>绿色圆点: 可收集垃圾</span>
+        <span>关底回收站: 收集达标后可通关</span>
+      </div>
+      <button id="restart" type="button">重新开始</button>
+    </section>
+
+    <section class="board-wrap">
+      <canvas id="game" width="900" height="560" aria-label="环保闯关小游戏"></canvas>
+      <div class="toast" id="toast"></div>
+      <div class="result hidden" id="result"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
